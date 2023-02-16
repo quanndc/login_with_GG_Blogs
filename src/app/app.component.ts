@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { Observable } from 'rxjs';
+import { New } from './Models/new.model';
+import { NewService } from './services/new.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newsDemo';
+  constructor(private router: Router) {
+  }
 }

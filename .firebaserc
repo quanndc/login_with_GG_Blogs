@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-runway-blog": {
+      "hosting": {
+        "newsDemo": [
+          "fir-runway-blog"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-runway-blog"
+  }
+}
