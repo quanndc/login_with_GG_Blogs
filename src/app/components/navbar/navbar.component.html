@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div id="container">
+    <div class="left">
+        <p class="logo">
+            Runway Blog
+        </p>
+    </div>
+    <div class="middle">
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <div><span class="material-symbols-outlined">search</span></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="profile">
+            <img [src]="this.authService.user?.photoURL" *ngIf="this.authService.login == true">
+            <p *ngIf="this.authService.login == true" >{{this.authService.user?.displayName}}</p>
+            <button *ngIf="this.authService.login == true" (click)="this.authService.logout()">Logout</button>
+            <button (click)="navigateToLogin()" *ngIf="this.authService.login == false"> Login</button>
+            <button (click)="navigateToLogin()" *ngIf="this.authService.login == false"> Create account</button>
+        </div>
+    </div>
+</div>

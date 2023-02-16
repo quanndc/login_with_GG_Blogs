@@ -1,1 +1,52 @@
-<p>login works!</p>
+<div id="container">
+    <div class="login-form">
+       <div class="top">
+        <h1>
+            Welcome to Runway Blog
+        </h1>
+        <div class="login-options">
+            <div class="login-with-facebook">
+                <img src="../../../assets/fblogo.png" alt="">
+                <p>Continue with Facebook</p>
+            </div>
+            <div (click)="login()" class="login-with-google">
+                <img src="../../../assets/googlelogo.png" alt="">
+                <p>Continue with Google</p>
+            </div>
+            <div class="had-account"> 
+                <p>Have a password? Continue with your email address</p>
+            </div>
+        </div>
+       </div>
+       <div class="bottom">
+            <div class="email">
+                <div class="content">
+                    <p>Email</p>
+                    <input type="text" placeholder="Your email...">
+                </div>
+            </div>
+            <div class="password">
+                <div class="content">
+                    <p>Password</p>
+                    <input type="password" placeholder="Your password...">
+                </div>
+            </div>
+            <div class="remember-me">
+                <div class="content">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+            </div>
+            <div class="login">
+                <div class="content">
+                    <input type="submit" value="Login">
+                </div>
+            </div>
+            <div class="forgot-password">
+                <div class="content">
+                    <a href="#">I forgot my password</a>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
